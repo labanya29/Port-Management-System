@@ -177,7 +177,10 @@ namespace Port_Management_System
             panelContainer.Controls.Add(admin);
         }
 
+        private void captain_add_btn_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 

@@ -64,7 +64,19 @@
     <Compile Include="Admin_info.Designer.cs">
       <DependentUpon>Admin_info.cs</DependentUpon>
     </Compile>
+    <Compile Include="Captain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Captain.Designer.cs">
+      <DependentUpon>Captain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="Deck_officer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deck_officer.Designer.cs">
+      <DependentUpon>Deck_officer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Equipment.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -120,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminProfile.resx">
       <DependentUpon>AdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Captain.resx">
+      <DependentUpon>Captain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -181,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loginpage.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log in.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ND.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

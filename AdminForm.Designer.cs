@@ -36,13 +36,13 @@ namespace Port_Management_System
             this.profile_pictureBox = new System.Windows.Forms.PictureBox();
             this.schedule_btn = new System.Windows.Forms.Button();
             this.add_sub_panel = new System.Windows.Forms.Panel();
+            this.add_vessel_btn = new System.Windows.Forms.Button();
+            this.add_cargo_inspactor_btn = new System.Windows.Forms.Button();
+            this.deck_officer_btn = new System.Windows.Forms.Button();
+            this.captain_add_btn = new System.Windows.Forms.Button();
             this.new_admin_btn = new System.Windows.Forms.Button();
             this.add_btn = new System.Windows.Forms.Button();
-            this.captain_add_btn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.deck_officer_btn = new System.Windows.Forms.Button();
-            this.add_cargo_inspactor_btn = new System.Windows.Forms.Button();
-            this.add_vessel_btn = new System.Windows.Forms.Button();
             this.delete_sub_panel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -68,6 +68,8 @@ namespace Port_Management_System
             // 
             // admin_panel
             // 
+            this.admin_panel.BackgroundImage = global::Port_Management_System.Properties.Resources._2ND;
+            this.admin_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.admin_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_panel.Location = new System.Drawing.Point(0, 0);
             this.admin_panel.Margin = new System.Windows.Forms.Padding(4);
@@ -144,6 +146,71 @@ namespace Port_Management_System
             this.add_sub_panel.TabIndex = 6;
             this.add_sub_panel.Visible = false;
             // 
+            // add_vessel_btn
+            // 
+            this.add_vessel_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.add_vessel_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_vessel_btn.FlatAppearance.BorderSize = 0;
+            this.add_vessel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.add_vessel_btn.Location = new System.Drawing.Point(0, 168);
+            this.add_vessel_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.add_vessel_btn.Name = "add_vessel_btn";
+            this.add_vessel_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.add_vessel_btn.Size = new System.Drawing.Size(137, 42);
+            this.add_vessel_btn.TabIndex = 8;
+            this.add_vessel_btn.Text = "Vessel";
+            this.add_vessel_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_vessel_btn.UseVisualStyleBackColor = false;
+            // 
+            // add_cargo_inspactor_btn
+            // 
+            this.add_cargo_inspactor_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.add_cargo_inspactor_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.add_cargo_inspactor_btn.FlatAppearance.BorderSize = 0;
+            this.add_cargo_inspactor_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.add_cargo_inspactor_btn.Location = new System.Drawing.Point(0, 126);
+            this.add_cargo_inspactor_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.add_cargo_inspactor_btn.Name = "add_cargo_inspactor_btn";
+            this.add_cargo_inspactor_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.add_cargo_inspactor_btn.Size = new System.Drawing.Size(137, 42);
+            this.add_cargo_inspactor_btn.TabIndex = 7;
+            this.add_cargo_inspactor_btn.Text = "Cargo Inspactor";
+            this.add_cargo_inspactor_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.add_cargo_inspactor_btn.UseVisualStyleBackColor = false;
+            // 
+            // deck_officer_btn
+            // 
+            this.deck_officer_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.deck_officer_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.deck_officer_btn.FlatAppearance.BorderSize = 0;
+            this.deck_officer_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deck_officer_btn.Location = new System.Drawing.Point(0, 84);
+            this.deck_officer_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.deck_officer_btn.Name = "deck_officer_btn";
+            this.deck_officer_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.deck_officer_btn.Size = new System.Drawing.Size(137, 42);
+            this.deck_officer_btn.TabIndex = 6;
+            this.deck_officer_btn.Text = "Deck Officer";
+            this.deck_officer_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.deck_officer_btn.UseVisualStyleBackColor = false;
+            // 
+            // captain_add_btn
+            // 
+            this.captain_add_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.captain_add_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.captain_add_btn.FlatAppearance.BorderSize = 0;
+            this.captain_add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.captain_add_btn.Location = new System.Drawing.Point(0, 42);
+            this.captain_add_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.captain_add_btn.Name = "captain_add_btn";
+            this.captain_add_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.captain_add_btn.Size = new System.Drawing.Size(137, 42);
+            this.captain_add_btn.TabIndex = 5;
+            this.captain_add_btn.Text = "Captain";
+            this.captain_add_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.captain_add_btn.UseVisualStyleBackColor = false;
+            this.captain_add_btn.Click += new System.EventHandler(this.captain_add_btn_Click);
+            // 
             // new_admin_btn
             // 
             this.new_admin_btn.Dock = System.Windows.Forms.DockStyle.Top;
@@ -174,22 +241,6 @@ namespace Port_Management_System
             this.add_btn.UseVisualStyleBackColor = true;
             this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
-            // captain_add_btn
-            // 
-            this.captain_add_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.captain_add_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.captain_add_btn.FlatAppearance.BorderSize = 0;
-            this.captain_add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.captain_add_btn.Location = new System.Drawing.Point(0, 42);
-            this.captain_add_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.captain_add_btn.Name = "captain_add_btn";
-            this.captain_add_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.captain_add_btn.Size = new System.Drawing.Size(137, 42);
-            this.captain_add_btn.TabIndex = 5;
-            this.captain_add_btn.Text = "Captain";
-            this.captain_add_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.captain_add_btn.UseVisualStyleBackColor = false;
-            // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
@@ -205,54 +256,6 @@ namespace Port_Management_System
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(158, 554);
             this.panel3.TabIndex = 7;
-            // 
-            // deck_officer_btn
-            // 
-            this.deck_officer_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.deck_officer_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.deck_officer_btn.FlatAppearance.BorderSize = 0;
-            this.deck_officer_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.deck_officer_btn.Location = new System.Drawing.Point(0, 84);
-            this.deck_officer_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.deck_officer_btn.Name = "deck_officer_btn";
-            this.deck_officer_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.deck_officer_btn.Size = new System.Drawing.Size(137, 42);
-            this.deck_officer_btn.TabIndex = 6;
-            this.deck_officer_btn.Text = "Deck Officer";
-            this.deck_officer_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.deck_officer_btn.UseVisualStyleBackColor = false;
-            // 
-            // add_cargo_inspactor_btn
-            // 
-            this.add_cargo_inspactor_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.add_cargo_inspactor_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_cargo_inspactor_btn.FlatAppearance.BorderSize = 0;
-            this.add_cargo_inspactor_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.add_cargo_inspactor_btn.Location = new System.Drawing.Point(0, 126);
-            this.add_cargo_inspactor_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.add_cargo_inspactor_btn.Name = "add_cargo_inspactor_btn";
-            this.add_cargo_inspactor_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.add_cargo_inspactor_btn.Size = new System.Drawing.Size(137, 42);
-            this.add_cargo_inspactor_btn.TabIndex = 7;
-            this.add_cargo_inspactor_btn.Text = "Cargo Inspactor";
-            this.add_cargo_inspactor_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_cargo_inspactor_btn.UseVisualStyleBackColor = false;
-            // 
-            // add_vessel_btn
-            // 
-            this.add_vessel_btn.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.add_vessel_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.add_vessel_btn.FlatAppearance.BorderSize = 0;
-            this.add_vessel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.add_vessel_btn.Location = new System.Drawing.Point(0, 168);
-            this.add_vessel_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.add_vessel_btn.Name = "add_vessel_btn";
-            this.add_vessel_btn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.add_vessel_btn.Size = new System.Drawing.Size(137, 42);
-            this.add_vessel_btn.TabIndex = 8;
-            this.add_vessel_btn.Text = "Vessel";
-            this.add_vessel_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_vessel_btn.UseVisualStyleBackColor = false;
             // 
             // delete_sub_panel
             // 

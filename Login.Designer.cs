@@ -33,90 +33,81 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.password_tb = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // login_button
             // 
-            this.login_button.Location = new System.Drawing.Point(307, 203);
+            this.login_button.BackColor = System.Drawing.Color.SteelBlue;
+            this.login_button.Location = new System.Drawing.Point(925, 260);
+            this.login_button.Margin = new System.Windows.Forms.Padding(4);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(75, 23);
+            this.login_button.Size = new System.Drawing.Size(100, 28);
             this.login_button.TabIndex = 0;
             this.login_button.Text = "Login";
-            this.login_button.UseVisualStyleBackColor = true;
+            this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // id_tbx
             // 
-            this.id_tbx.Location = new System.Drawing.Point(260, 93);
+            this.id_tbx.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.id_tbx.Location = new System.Drawing.Point(780, 132);
+            this.id_tbx.Margin = new System.Windows.Forms.Padding(4);
             this.id_tbx.Name = "id_tbx";
-            this.id_tbx.Size = new System.Drawing.Size(271, 20);
+            this.id_tbx.Size = new System.Drawing.Size(261, 22);
             this.id_tbx.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(187, 100);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(678, 135);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "ID";
+            this.label1.Text = "USER ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SeaShell;
-            this.label2.Location = new System.Drawing.Point(187, 144);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(678, 199);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(94, 16);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Passward";
+            this.label2.Text = "PASSWORD";
             // 
             // password_tb
             // 
-            this.password_tb.Location = new System.Drawing.Point(260, 137);
+            this.password_tb.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.password_tb.Location = new System.Drawing.Point(780, 196);
+            this.password_tb.Margin = new System.Windows.Forms.Padding(4);
             this.password_tb.Name = "password_tb";
-            this.password_tb.Size = new System.Drawing.Size(271, 20);
+            this.password_tb.Size = new System.Drawing.Size(261, 22);
             this.password_tb.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(353, 42);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 28);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Welcome";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Port_Management_System.Properties.Resources.Log_in;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.password_tb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.id_tbx);
             this.Controls.Add(this.login_button);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "LOGIN PAGE";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,8 +120,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox password_tb;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
     }
 }
 
