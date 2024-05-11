@@ -85,6 +85,20 @@ namespace Port_Management_System
 
 
             }
+           else if (id.Substring(0, 2) == "DC")
+            {
+                int flag = Admin(id, password_tb.Text);
+                if (flag == 0)
+                {
+                    MessageBox.Show("Invalid ID or Password");
+                    return;
+                }
+                Deck_officer deck_Officer = new Deck_officer(id);
+                this.Hide();
+                deck_Officer.Show();
+
+
+            }
 
         }
        

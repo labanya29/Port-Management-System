@@ -149,7 +149,7 @@ namespace Port_Management_System
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Class name is admin form function name data store");
             }
         }
 
@@ -178,6 +178,16 @@ namespace Port_Management_System
         }
 
         private void captain_add_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_vessel_btn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

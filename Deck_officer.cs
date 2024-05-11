@@ -12,9 +12,71 @@ namespace Port_Management_System
 {
     public partial class Deck_officer : Form
     {
+        private string id;
         public Deck_officer()
         {
             InitializeComponent();
+        }
+        public Deck_officer(string id):this()
+        {
+            this.id = id;  
+        }
+        static Deck_officer obj;
+        public static Deck_officer Instance
+        {
+            get
+            {
+                if (obj == null)
+                {
+                    obj = new Deck_officer();
+                }
+                return obj;
+            }
+        }
+
+        public Panel panelContainer
+        {
+            get { return AddCrewPanel; }
+            set { AddCrewPanel = value; }
+        }
+        
+
+        private void add_crew_btn_Click(object sender, EventArgs e)
+        {
+            if (!Deck_officer.Instance.panelContainer.Controls.ContainsKey("AddCrew"))
+            {
+                Deck_officer.Instance.panelContainer.Controls.Clear();
+                AddCrew add_crew = new AddCrew();
+                add_crew.Dock = DockStyle.Fill;
+                Deck_officer.Instance.panelContainer.Controls.Add(add_crew);
+            }
+        }
+
+       
+
+        private void Deck_officer_Load(object sender, EventArgs e)
+        {
+            obj = this;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!Deck_officer.Instance.panelContainer.Controls.ContainsKey("AddCrew"))
+            {
+                Deck_officer.Instance.panelContainer.Controls.Clear();
+                CrewDetailsForm crewdetails = new CrewDetailsForm(this.id);
+                crewdetails.Dock = DockStyle.Fill;
+                Deck_officer.Instance.panelContainer.Controls.Add(crewdetails);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            panelContainer.Controls.Clear();
+            Schedule schedule = new Schedule();
+            schedule.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(schedule);
         }
     }
 }

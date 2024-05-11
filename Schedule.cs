@@ -17,6 +17,7 @@ namespace Port_Management_System
         public Schedule()
         {
             InitializeComponent();
+            
         }
 
         public Schedule(string adminID) : this()
