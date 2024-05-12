@@ -41,18 +41,35 @@ namespace Port_Management_System
 
         private void add_crew_btn_Click(object sender, EventArgs e)
         {
-            if (!CaptainForm.Instance.panelContainer.Controls.ContainsKey("AddCrew"))
+            if (!panelContainer.Controls.ContainsKey("AddCrew"))
             {
-                CaptainForm.Instance.panelContainer.Controls.Clear();
-                 AddCrew add_crew= new AddCrew();
+                panelContainer.Controls.Clear();
+                 Add add_crew= new Add();
                 add_crew.Dock = DockStyle.Fill;
-                CaptainForm.Instance.panelContainer.Controls.Add(add_crew);
+                panelContainer.Controls.Add(add_crew);
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CargoDetailsBtn_Click(object sender, EventArgs e)
         {
+            if (!panelContainer.Controls.ContainsKey("CargoDetailsForm"))
+            {
+                panelContainer.Controls.Clear();
+                CargoDetailsForm cargoDetailsForm = new CargoDetailsForm();
+                cargoDetailsForm.Dock = DockStyle.Fill;
+                panelContainer.Controls.Add(cargoDetailsForm);
+            }
+        }
 
+        private void CrewDetailsBtn_Click(object sender, EventArgs e)
+        {
+            if (!panelContainer.Controls.ContainsKey("CargoDetailsForm"))
+            {
+                panelContainer.Controls.Clear();
+                CrewDetailsForm crewDetailsForm = new CrewDetailsForm();
+                crewDetailsForm.Dock = DockStyle.Fill;
+                panelContainer.Controls.Add(crewDetailsForm);
+            }
         }
     }
 }

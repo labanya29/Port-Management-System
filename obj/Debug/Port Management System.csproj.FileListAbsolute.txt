@@ -52,8 +52,12 @@ D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port Manage
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port Management System.csproj.CoreCompileInputs.cache
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port Management System.exe
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port Management System.pdb
-D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.AddCrew.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.CaptainForm.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.CrewDetailsForm.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.Deck_officer.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.AdminSignup.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.CargoDetailsForm.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.AddCargo.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.Cargo_Inspector.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.Add_Captain.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.Add.resources

@@ -86,7 +86,7 @@ namespace Port_Management_System
         private void new_admin_btn_Click(object sender, EventArgs e)
         {
             panelContainer.Controls.Clear();
-            New_Admin new_Admin = new New_Admin(this.adminID);
+            Add new_Admin = new Add(this.adminID, "Admin");
             new_Admin.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(new_Admin);
         }
@@ -135,8 +135,13 @@ namespace Port_Management_System
                         {
                             if (reader.Read())
                             {
-                                profile_pictureBox.Image = equipment.ByteArrayToImage((byte[])reader["Picture"]);
+                                object pictureData = reader["Picture"];
+                                if (pictureData != DBNull.Value)
+                                    profile_pictureBox.Image = equipment.ByteArrayToImage((byte[])pictureData);
 
+                                else
+                                    // Set a default image or do any other appropriate handling
+                                    profile_pictureBox.Image = Properties.Resources.DefaultPicture; // Example: setting a default image from project resources
                             }
 
 
@@ -179,17 +184,47 @@ namespace Port_Management_System
 
         private void captain_add_btn_Click(object sender, EventArgs e)
         {
-
+            panelContainer.Controls.Clear();
+            Add new_Admin = new Add(this.adminID, "Captain");
+            new_Admin.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(new_Admin);
         }
 
         private void add_vessel_btn_Click_1(object sender, EventArgs e)
         {
-
+            if (!AdminForm.Instance.panelContainer.Controls.ContainsKey("Login"))
+            {
+                AdminForm.Instance.panelContainer.Controls.Clear();
+                AdminProfile profile = new AdminProfile(this.adminID);
+                profile.Dock = DockStyle.Fill;
+                AdminForm.Instance.panelContainer.Controls.Add(profile);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deck_officer_btn_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            Add new_Admin = new Add(this.adminID, "Deck Officer");
+            new_Admin.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(new_Admin);
+        }
+
+        private void add_cargo_inspactor_btn_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            Add new_Admin = new Add(this.adminID, "Cargo Inspector");
+            new_Admin.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(new_Admin);
         }
     }
 }

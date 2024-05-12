@@ -52,10 +52,13 @@ namespace Port_Management_System
                             {
                                 id_tb.Text = reader["ID"].ToString();
                                 name_tb.Text = reader["Name"].ToString();
-                                picture_box.Image = equipment.ByteArrayToImage((byte[])reader["Picture"]);
+                                
                                 phone_number_tb.Text = reader["Phone Number"].ToString();
                                 email_tb.Text = reader["Email"].ToString();
-                                address_tb.Text = reader["Address"].ToString();
+                               // address_tb.Text = reader["Address"].ToString();
+
+                                
+
                             }
                         }
                     }
@@ -64,7 +67,7 @@ namespace Port_Management_System
 
             catch(Exception ex)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Error: "+ex.Message);
             }
         }
 

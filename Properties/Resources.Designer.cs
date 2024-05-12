@@ -73,6 +73,16 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DefaultPicture {
+            get {
+                object obj = ResourceManager.GetObject("DefaultPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Log_in {
             get {
                 object obj = ResourceManager.GetObject("Log in", resourceCulture);

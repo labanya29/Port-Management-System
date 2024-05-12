@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Captain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add Captain.Designer.cs">
+      <DependentUpon>Add Captain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Crew.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Add Crew.Designer.cs">
       <DependentUpon>Add Crew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCargo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddCargo.Designer.cs">
+      <DependentUpon>AddCargo.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
@@ -81,6 +93,18 @@
     </Compile>
     <Compile Include="Captain.Designer.cs">
       <DependentUpon>Captain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo Inspector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo Inspector.Designer.cs">
+      <DependentUpon>Cargo Inspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargoDetailsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CargoDetailsForm.Designer.cs">
+      <DependentUpon>CargoDetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CrewDetailsForm .cs">
       <SubType>UserControl</SubType>
@@ -145,8 +169,14 @@
     <Compile Include="VesselAdd.Designer.cs">
       <DependentUpon>VesselAdd.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Captain.resx">
+      <DependentUpon>Add Captain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add Crew.resx">
       <DependentUpon>Add Crew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCargo.resx">
+      <DependentUpon>AddCargo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
@@ -159,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Captain.resx">
       <DependentUpon>Captain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo Inspector.resx">
+      <DependentUpon>Cargo Inspector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargoDetailsForm.resx">
+      <DependentUpon>CargoDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrewDetailsForm .resx">
       <DependentUpon>CrewDetailsForm .cs</DependentUpon>
@@ -232,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2ND.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultPicture.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

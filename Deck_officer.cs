@@ -43,13 +43,10 @@ namespace Port_Management_System
 
         private void add_crew_btn_Click(object sender, EventArgs e)
         {
-            if (!Deck_officer.Instance.panelContainer.Controls.ContainsKey("AddCrew"))
-            {
-                Deck_officer.Instance.panelContainer.Controls.Clear();
-                AddCrew add_crew = new AddCrew();
-                add_crew.Dock = DockStyle.Fill;
-                Deck_officer.Instance.panelContainer.Controls.Add(add_crew);
-            }
+            panelContainer.Controls.Clear();
+            Add new_Admin = new Add(type: "Crew");
+            new_Admin.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(new_Admin);
         }
 
        
