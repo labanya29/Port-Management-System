@@ -195,11 +195,21 @@ namespace Port_Management_System
             int serialNo = SerialNo(type) + 1;
             string id = string.Empty;
             if (type == "Admin")
-            {
                 return "AD-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
-            }
+            
 
-          
+            else if(type == "Captain")
+                    return "CA-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
+
+            else if (type == "Deck Officer")
+                return "DK-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
+
+            else if (type == "Cargo Inspector")
+                return "CI-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
+            else if (type == "Crew")
+                return "CW-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
+            else if (type == "Cargo")
+                return "CR-" + (year % 100) + serialNo.ToString("D4") + "-" + month;
 
             return string.Empty;
         }

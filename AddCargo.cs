@@ -17,7 +17,11 @@ namespace Port_Management_System
         {
             InitializeComponent();
         }
-        
+
+        private bool Check()
+        {
+            return !string.IsNullOrWhiteSpace(CargoNoTb.Text) && !string.IsNullOrWhiteSpace(TypeOfCargoTb.Text) && !string.IsNullOrWhiteSpace(CargoQuantityTb.Text) && !string.IsNullOrWhiteSpace(DestinationTb.Text);
+        }
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
@@ -51,6 +55,13 @@ namespace Port_Management_System
                     command.ExecuteNonQuery();
 
                 }
+
+                connection.Close();
+                this.Hide();
+                Cargo_Inspector.Instance.panelContainer.Controls.Clear();
+                AddCargo addCargo = new AddCargo();
+                addCargo.Dock = DockStyle.Fill;
+                Cargo_Inspector.Instance.panelContainer.Controls.Add(addCargo);
             }
         }
     }

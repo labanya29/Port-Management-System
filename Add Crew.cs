@@ -72,37 +72,44 @@ namespace Port_Management_System
                 MessageBox.Show("Fill the all required fields");
                 return;
             }
-            Database database = new Database();
-            using (SqlConnection connection = new SqlConnection(database.connectionString))
+            try
             {
-                connection.Open();
-
-                string registrationQuery = $@"INSERT INTO [{type} Information] (ID, Name,Picture, Email, [Phone Number], Gender, [Password]) 
-                                               VALUES (@ID, @Name,@Picture, @Email, @PhoneNumber, @Gender, @Password)";
-                Equipment equipment = new Equipment();
-
-                using (SqlCommand command = new SqlCommand(registrationQuery, connection))
+                Database database = new Database();
+                using (SqlConnection connection = new SqlConnection(database.connectionString))
                 {
-                    command.Parameters.Clear();
-                    command.Parameters.AddWithValue("@ID", equipment.IdGenarator(type));
-                    command.Parameters.AddWithValue("@Name", name_tb.Text);
-                    command.Parameters.AddWithValue("@Picture", equipment.ImageToByteArray(picture_box.Image));
-                    command.Parameters.AddWithValue("@Email", email_tb.Text);
-                    command.Parameters.AddWithValue("@PhoneNumber", phone_number_tb.Text);
-                    command.Parameters.AddWithValue("@Gender", _gender);
-                    command.Parameters.AddWithValue("@Password", equipment.GenerateCustomPassword(5, true, true, true, false));
-                    //  command.Parameters.AddWithValue("@AddedBy", adminID);
+                    connection.Open();
+
+                    string registrationQuery = $@"INSERT INTO [{type} Information] (ID, Name,Picture, Email, [Phone Number], Gender, [Password]) 
+                                               VALUES (@ID, @Name,@Picture, @Email, @PhoneNumber, @Gender, @Password)";
+                    Equipment equipment = new Equipment();
+
+                    using (SqlCommand command = new SqlCommand(registrationQuery, connection))
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@ID", equipment.IdGenarator(type));
+                        command.Parameters.AddWithValue("@Name", name_tb.Text);
+                        command.Parameters.AddWithValue("@Picture", equipment.ImageToByteArray(picture_box.Image));
+                        command.Parameters.AddWithValue("@Email", email_tb.Text);
+                        command.Parameters.AddWithValue("@PhoneNumber", phone_number_tb.Text);
+                        command.Parameters.AddWithValue("@Gender", _gender);
+                        command.Parameters.AddWithValue("@Password", equipment.GenerateCustomPassword(5, true, true, true, false));
+                        //  command.Parameters.AddWithValue("@AddedBy", adminID);
 
 
-                    command.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
 
+                    }
+                    MessageBox.Show("Successfully resited");
+                    this.Hide();
+                    Add add = new Add(type: type);
+                    add.Show();
                 }
             }
-        }
-
-        private void register_btn_Click_1(object sender, EventArgs e)
-        {
-
+            
+            catch(Exception ex)
+            {
+                MessageBox.Show("Class name is Add and function name is register and error is " + ex.Message);
+            }
         }
 
         private bool Check()

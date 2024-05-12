@@ -72,28 +72,28 @@ namespace Port_Management_System
                 MessageBox.Show("Dill the id", "Ërror");
                 return; 
             }
-            
+
             if (id.Substring(0, 2) == "AD")
             {
                 int flag = Valid(id, password_tb.Text, "Admin Information");
-                if (flag == 0) 
+                if (flag == 0)
                 {
                     MessageBox.Show("Invalid ID or Password");
                     return;
                 }
-                else if(flag == 1)
+                else if (flag == 1)
                 {
                     AdminForm adminForm = new AdminForm(id);
                     this.Hide();
                     adminForm.Show();
                 }
-               
+
 
 
             }
-           else if (id.Substring(0, 2) == "DC")
+            else if (id.Substring(0, 2) == "DK")
             {
-                int flag = Valid(id, password_tb.Text, "");
+                int flag = Valid(id, password_tb.Text, "Deck Officer Information");
                 if (flag == 0)
                 {
                     MessageBox.Show("Invalid ID or Password");
@@ -103,8 +103,37 @@ namespace Port_Management_System
                 this.Hide();
                 deck_Officer.Show();
 
-
             }
+
+
+            else if (id.Substring(0, 2) == "CA")
+            {
+                int flag = Valid(id, password_tb.Text, "Captain Information");
+                if (flag == 0)
+                {
+                    MessageBox.Show("Invalid ID or Password");
+                    return;
+                }
+
+                this.Hide();
+                CaptainForm captainForm = new CaptainForm();
+                captainForm.Show(); 
+            }
+
+            else if (id.Substring(0, 2) == "CI")
+            {
+                int flag = Valid(id, password_tb.Text, "Cargo Inspector Information");
+                if (flag == 0)
+                {
+                    MessageBox.Show("Invalid ID or Password");
+                    return;
+                }
+
+                this.Hide();
+                Cargo_Inspector cargo_Inspector = new Cargo_Inspector();
+                cargo_Inspector.Show();
+            }
+
 
         }
 
