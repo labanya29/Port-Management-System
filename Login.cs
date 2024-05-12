@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -64,6 +65,7 @@ namespace Port_Management_System
         private void login_button_Click(object sender, EventArgs e)
         {
             string id = id_tbx.Text;
+            string password = password_tb.Text;
 
             if(string.IsNullOrWhiteSpace(id)) 
             {
@@ -73,21 +75,25 @@ namespace Port_Management_System
             
             if (id.Substring(0, 2) == "AD")
             {
-                int flag = Admin(id, password_tb.Text);
+                int flag = Valid(id, password_tb.Text, "Admin Information");
                 if (flag == 0) 
                 {
                     MessageBox.Show("Invalid ID or Password");
                     return;
                 }
-                AdminForm adminForm = new AdminForm(id);
-                this.Hide();
-                adminForm.Show();
+                else if(flag == 1)
+                {
+                    AdminForm adminForm = new AdminForm(id);
+                    this.Hide();
+                    adminForm.Show();
+                }
+               
 
 
             }
            else if (id.Substring(0, 2) == "DC")
             {
-                int flag = Admin(id, password_tb.Text);
+                int flag = Valid(id, password_tb.Text, "");
                 if (flag == 0)
                 {
                     MessageBox.Show("Invalid ID or Password");
@@ -100,6 +106,39 @@ namespace Port_Management_System
 
             }
 
+        }
+
+        private int Valid(string id, string password, string tableName)
+        {
+
+            try
+            {
+                Database database = new Database();
+                using (SqlConnection connection = new SqlConnection(database.connectionString))
+                {
+                    connection.Open();
+                    string query = $@"SELECT 1 ID FROM [{tableName}] WHERE [ID] = @id AND [Password] = @password";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+                        command.Parameters.AddWithValue("@password", password);
+
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows) return 1;
+                            else return 0; 
+                        }
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Class name is Login function name is Valid and error is "+ ex.Message);
+                return -1;
+            }
+            
         }
 
         private void AdminSignUp_Click(object sender, EventArgs e)

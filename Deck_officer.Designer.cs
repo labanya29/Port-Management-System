@@ -43,16 +43,18 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 450);
+            this.panel1.Size = new System.Drawing.Size(194, 554);
             this.panel1.TabIndex = 0;
             // 
             // CrewDetailsBtn
             // 
             this.CrewDetailsBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CrewDetailsBtn.Location = new System.Drawing.Point(0, 46);
+            this.CrewDetailsBtn.Location = new System.Drawing.Point(0, 56);
+            this.CrewDetailsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CrewDetailsBtn.Name = "CrewDetailsBtn";
-            this.CrewDetailsBtn.Size = new System.Drawing.Size(200, 23);
+            this.CrewDetailsBtn.Size = new System.Drawing.Size(194, 28);
             this.CrewDetailsBtn.TabIndex = 2;
             this.CrewDetailsBtn.Text = "Crew Details";
             this.CrewDetailsBtn.UseVisualStyleBackColor = true;
@@ -61,9 +63,10 @@
             // AddCrew
             // 
             this.AddCrew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AddCrew.Location = new System.Drawing.Point(0, 23);
+            this.AddCrew.Location = new System.Drawing.Point(0, 28);
+            this.AddCrew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddCrew.Name = "AddCrew";
-            this.AddCrew.Size = new System.Drawing.Size(200, 23);
+            this.AddCrew.Size = new System.Drawing.Size(194, 28);
             this.AddCrew.TabIndex = 1;
             this.AddCrew.Text = "Add Crew";
             this.AddCrew.UseVisualStyleBackColor = true;
@@ -73,8 +76,9 @@
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 23);
+            this.button1.Size = new System.Drawing.Size(194, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Vessel Details ";
             this.button1.UseVisualStyleBackColor = true;
@@ -83,18 +87,20 @@
             // AddCrewPanel
             // 
             this.AddCrewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddCrewPanel.Location = new System.Drawing.Point(200, 0);
+            this.AddCrewPanel.Location = new System.Drawing.Point(194, 0);
+            this.AddCrewPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddCrewPanel.Name = "AddCrewPanel";
-            this.AddCrewPanel.Size = new System.Drawing.Size(600, 450);
+            this.AddCrewPanel.Size = new System.Drawing.Size(873, 554);
             this.AddCrewPanel.TabIndex = 1;
             // 
             // Deck_officer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.AddCrewPanel);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Deck_officer";
             this.Text = "Deck_officer";
             this.Load += new System.EventHandler(this.Deck_officer_Load);
