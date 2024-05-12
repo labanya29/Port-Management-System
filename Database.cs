@@ -25,7 +25,7 @@ namespace Port_Management_System
                                 FROM 
                                     [{type} Information] 
                                 ORDER BY 
-                                    ID";
+                                    [Added_DateTime] DESC";
 
                     connection.Open();
 

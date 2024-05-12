@@ -56,3 +56,4 @@ D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Manage
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.CaptainForm.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.CrewDetailsForm.resources
 D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.Deck_officer.resources
+D:\Port-Management-System-main\Port-Management-System-main\obj\Debug\Port_Management_System.AdminSignup.resources

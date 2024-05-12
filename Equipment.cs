@@ -133,7 +133,7 @@ namespace Port_Management_System
 
                 else if (!string.IsNullOrEmpty(lastID))
                 {
-                    int year = StringToInt(lastID.Substring(4, 2)), month = StringToInt(lastID.Substring(lastID.Length - 1, 1));
+                    int year = StringToInt(lastID.Substring(3, 2)), month = StringToInt(lastID.Substring(lastID.Length - 1, 1));
                     DateTime dateTime = DateTime.Now;
                     int yearNow = (dateTime.Year % 100);
                     int monthNow = ((dateTime.Month) / 5) + 1;
@@ -149,7 +149,7 @@ namespace Port_Management_System
                     {
                         if (type != "Customer")
                         {
-                            string numberPart = lastID.Substring(6, 4);
+                            string numberPart = lastID.Substring(5, 4);
                             // CustomMessageBox.Show(numberPart);
                             returnValue = StringToInt(numberPart);
                         }

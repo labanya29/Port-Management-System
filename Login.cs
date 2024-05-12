@@ -101,8 +101,14 @@ namespace Port_Management_System
             }
 
         }
-       
 
+        private void AdminSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminSignup adminSignup = new AdminSignup();
+            adminSignup.Show();
+
+        }
     }
  }
 
