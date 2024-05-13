@@ -32,16 +32,18 @@
             this.CargoDetails = new System.Windows.Forms.Button();
             this.AddCargo = new System.Windows.Forms.Button();
             this.CargoInspectorPanel = new System.Windows.Forms.Panel();
+            this.CiLogOutBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.CiLogOutBtn);
             this.panel1.Controls.Add(this.CargoDetails);
             this.panel1.Controls.Add(this.AddCargo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 554);
             this.panel1.TabIndex = 0;
@@ -50,18 +52,19 @@
             // 
             this.CargoDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.CargoDetails.Location = new System.Drawing.Point(0, 28);
-            this.CargoDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CargoDetails.Margin = new System.Windows.Forms.Padding(4);
             this.CargoDetails.Name = "CargoDetails";
             this.CargoDetails.Size = new System.Drawing.Size(267, 28);
             this.CargoDetails.TabIndex = 1;
             this.CargoDetails.Text = "Cargo Details";
             this.CargoDetails.UseVisualStyleBackColor = true;
+            this.CargoDetails.Click += new System.EventHandler(this.CargoDetails_Click);
             // 
             // AddCargo
             // 
             this.AddCargo.Dock = System.Windows.Forms.DockStyle.Top;
             this.AddCargo.Location = new System.Drawing.Point(0, 0);
-            this.AddCargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddCargo.Margin = new System.Windows.Forms.Padding(4);
             this.AddCargo.Name = "AddCargo";
             this.AddCargo.Size = new System.Drawing.Size(267, 28);
             this.AddCargo.TabIndex = 0;
@@ -73,10 +76,21 @@
             // 
             this.CargoInspectorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CargoInspectorPanel.Location = new System.Drawing.Point(267, 0);
-            this.CargoInspectorPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CargoInspectorPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CargoInspectorPanel.Name = "CargoInspectorPanel";
             this.CargoInspectorPanel.Size = new System.Drawing.Size(800, 554);
             this.CargoInspectorPanel.TabIndex = 1;
+            // 
+            // CiLogOutBtn
+            // 
+            this.CiLogOutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.CiLogOutBtn.Location = new System.Drawing.Point(0, 531);
+            this.CiLogOutBtn.Name = "CiLogOutBtn";
+            this.CiLogOutBtn.Size = new System.Drawing.Size(267, 23);
+            this.CiLogOutBtn.TabIndex = 2;
+            this.CiLogOutBtn.Text = "Log Out";
+            this.CiLogOutBtn.UseVisualStyleBackColor = true;
+            this.CiLogOutBtn.Click += new System.EventHandler(this.CiLogOutBtn_Click);
             // 
             // Cargo_Inspector
             // 
@@ -85,7 +99,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.CargoInspectorPanel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cargo_Inspector";
             this.Text = "Cargo_Inspector";
             this.Load += new System.EventHandler(this.Cargo_Inspector_Load);
@@ -100,5 +114,6 @@
         private System.Windows.Forms.Button CargoDetails;
         private System.Windows.Forms.Button AddCargo;
         private System.Windows.Forms.Panel CargoInspectorPanel;
+        private System.Windows.Forms.Button CiLogOutBtn;
     }
 }

@@ -48,5 +48,20 @@ namespace Port_Management_System
             addCargo.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(addCargo);
         }
+
+        private void CiLogOutBtn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
+
+        private void CargoDetails_Click(object sender, EventArgs e)
+        {
+            panelContainer.Controls.Clear();
+            CargoDetailsForm cargoDetailsForm = new CargoDetailsForm();
+            cargoDetailsForm.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(cargoDetailsForm);
+        }
     }
 }

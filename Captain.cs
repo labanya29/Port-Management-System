@@ -71,5 +71,12 @@ namespace Port_Management_System
                 panelContainer.Controls.Add(crewDetailsForm);
             }
         }
+
+        private void CALogOutBtn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
     }
 }

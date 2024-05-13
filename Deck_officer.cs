@@ -75,5 +75,12 @@ namespace Port_Management_System
             schedule.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(schedule);
         }
+
+        private void DKLogOutBtn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
+        }
     }
 }

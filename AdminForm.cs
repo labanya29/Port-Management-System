@@ -226,6 +226,11 @@ namespace Port_Management_System
             new_Admin.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(new_Admin);
         }
+
+        private void add_vessel_btn_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

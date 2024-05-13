@@ -64,5 +64,12 @@ namespace Port_Management_System
                 Cargo_Inspector.Instance.panelContainer.Controls.Add(addCargo);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cargo_Inspector cargo_Inspector = new Cargo_Inspector();
+            this.Hide();
+            cargo_Inspector.Show();
+        }
     }
 }
