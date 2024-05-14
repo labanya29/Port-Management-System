@@ -229,7 +229,10 @@ namespace Port_Management_System
 
         private void add_vessel_btn_Click_2(object sender, EventArgs e)
         {
-
+            panelContainer.Controls.Clear();
+            VesselAdd vesselAdd = new VesselAdd();
+            vesselAdd.Dock = DockStyle.Fill;
+            panelContainer.Controls.Add(vesselAdd);
         }
     }
 }

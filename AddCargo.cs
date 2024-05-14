@@ -71,5 +71,20 @@ namespace Port_Management_System
             this.Hide();
             cargo_Inspector.Show();
         }
+
+        private void CargoIdTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CargoNoTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

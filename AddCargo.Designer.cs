@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.cargoID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CargoIdTb = new System.Windows.Forms.TextBox();
             this.TypeOfCargoTb = new System.Windows.Forms.TextBox();
@@ -72,15 +72,15 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Destination :";
             // 
-            // label4
+            // cargoID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(131, 73);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cargo ID :";
+            this.cargoID.AutoSize = true;
+            this.cargoID.Location = new System.Drawing.Point(131, 73);
+            this.cargoID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cargoID.Name = "cargoID";
+            this.cargoID.Size = new System.Drawing.Size(66, 16);
+            this.cargoID.TabIndex = 3;
+            this.cargoID.Text = "Cargo ID :";
             // 
             // label5
             // 
@@ -91,6 +91,7 @@
             this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Cargo No :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // CargoIdTb
             // 
@@ -99,6 +100,7 @@
             this.CargoIdTb.Name = "CargoIdTb";
             this.CargoIdTb.Size = new System.Drawing.Size(132, 22);
             this.CargoIdTb.TabIndex = 10;
+            this.CargoIdTb.TextChanged += new System.EventHandler(this.CargoIdTb_TextChanged);
             // 
             // TypeOfCargoTb
             // 
@@ -123,6 +125,7 @@
             this.CargoNoTb.Name = "CargoNoTb";
             this.CargoNoTb.Size = new System.Drawing.Size(132, 22);
             this.CargoNoTb.TabIndex = 14;
+            this.CargoNoTb.TextChanged += new System.EventHandler(this.CargoNoTb_TextChanged);
             // 
             // DestinationTb
             // 
@@ -165,7 +168,7 @@
             this.Controls.Add(this.TypeOfCargoTb);
             this.Controls.Add(this.CargoIdTb);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cargoID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -182,7 +185,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label cargoID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox CargoIdTb;
         private System.Windows.Forms.TextBox TypeOfCargoTb;

@@ -73,9 +73,59 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap captain_hat_concept_illustration_114360_10454 {
+            get {
+                object obj = ResourceManager.GetObject("captain-hat-concept-illustration_114360-10454", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DefaultPicture {
             get {
                 object obj = ResourceManager.GetObject("DefaultPicture", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_underwater_crystal_clear_ocean_theme_slide_ocean_graphy {
+            get {
+                object obj = ResourceManager.GetObject("desktop-wallpaper-underwater-crystal-clear-ocean-theme-slide-ocean-graphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gold_background_with_lines_squares_23_2148594717 {
+            get {
+                object obj = ResourceManager.GetObject("gold-background-with-lines-squares_23-2148594717", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1368264124_2048x2048 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1368264124-2048x2048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1460656467_2048x2048 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1460656467-2048x2048", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +146,16 @@ namespace Port_Management_System.Properties {
         internal static System.Drawing.Bitmap loginpage {
             get {
                 object obj = ResourceManager.GetObject("loginpage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ship_captain_logo_by_gangadhar666_dc5dvxq_pre {
+            get {
+                object obj = ResourceManager.GetObject("ship_captain_logo_by_gangadhar666_dc5dvxq-pre", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
