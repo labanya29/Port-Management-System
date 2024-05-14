@@ -103,6 +103,16 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondfofficle_k4o {
+            get {
+                object obj = ResourceManager.GetObject("fondfofficle_k4o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gold_background_with_lines_squares_23_2148594717 {
             get {
                 object obj = ResourceManager.GetObject("gold-background-with-lines-squares_23-2148594717", resourceCulture);
@@ -156,6 +166,16 @@ namespace Port_Management_System.Properties {
         internal static System.Drawing.Bitmap ship_captain_logo_by_gangadhar666_dc5dvxq_pre {
             get {
                 object obj = ResourceManager.GetObject("ship_captain_logo_by_gangadhar666_dc5dvxq-pre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_1529923664 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_1529923664", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

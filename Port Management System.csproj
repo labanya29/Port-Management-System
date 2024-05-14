@@ -187,6 +187,9 @@
     <EmbeddedResource Include="AdminSignup.resx">
       <DependentUpon>AdminSignup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_info.resx">
+      <DependentUpon>Admin_info.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Captain.resx">
       <DependentUpon>Captain.cs</DependentUpon>
     </EmbeddedResource>

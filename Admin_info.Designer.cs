@@ -41,6 +41,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
@@ -56,6 +57,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LightBlue;
             this.panel1.Controls.Add(this.id_tb);
             this.panel1.Controls.Add(this.delete_button);
             this.panel1.Controls.Add(this.search_btn);
@@ -67,6 +69,7 @@
             // 
             // id_tb
             // 
+            this.id_tb.BackColor = System.Drawing.Color.PaleTurquoise;
             this.id_tb.Location = new System.Drawing.Point(239, 42);
             this.id_tb.Name = "id_tb";
             this.id_tb.Size = new System.Drawing.Size(310, 22);
@@ -74,28 +77,31 @@
             // 
             // delete_button
             // 
+            this.delete_button.BackColor = System.Drawing.Color.SkyBlue;
             this.delete_button.Location = new System.Drawing.Point(743, 32);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(78, 33);
             this.delete_button.TabIndex = 1;
             this.delete_button.Text = "Delete";
-            this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.UseVisualStyleBackColor = false;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // search_btn
             // 
+            this.search_btn.BackColor = System.Drawing.Color.SkyBlue;
             this.search_btn.Location = new System.Drawing.Point(615, 30);
             this.search_btn.Name = "search_btn";
             this.search_btn.Size = new System.Drawing.Size(101, 37);
             this.search_btn.TabIndex = 0;
             this.search_btn.Text = "Search";
-            this.search_btn.UseVisualStyleBackColor = true;
+            this.search_btn.UseVisualStyleBackColor = false;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // data_grid_view
             // 
             this.data_grid_view.AllowUserToAddRows = false;
             this.data_grid_view.AllowUserToDeleteRows = false;
+            this.data_grid_view.BackgroundColor = System.Drawing.Color.LightCyan;
             this.data_grid_view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_grid_view.Location = new System.Drawing.Point(3, 103);
