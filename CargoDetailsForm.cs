@@ -17,19 +17,15 @@ namespace Port_Management_System
         public CargoDetailsForm()
         {
             InitializeComponent();
+            DataLoad();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-        public CargoDetailsForm(string cargoID) : this()
-        {
-           this.cargoID = cargoID;
-            DataLoad();
-        }
-
         
+
 
         private void DataLoad()
         {
@@ -42,10 +38,10 @@ namespace Port_Management_System
                 {
                     string query = @"SELECT 
                                        ID,
-                                       Name,
-                                       [Phone Number], 
-                                       [Email], 
-                                       Password
+                                       [Cargo No],
+                                       [Type of Cargo], 
+                                       Quantity, 
+                                       Destination
                                 FROM 
                                     [Cargo Information] 
                                 ORDER BY
@@ -81,6 +77,43 @@ namespace Port_Management_System
             {
                 MessageBox.Show("Class name is Admin-info function name is LoadData and exception: " + ex.Message);
             }
+        }
+        private void DataOperation(string query, string connectionString)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show($"{id_tb.Text} account successfully registered", "VOVO");
+                    connection.Close();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Class name is Quiz and function name is DataOperation and exception: " + ex.Message);
+            }
+
+        }
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure?", "", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Database dataBase = new Database();
+                string query = $"DELETE FROM [Cargo Information] WHERE [ID] = '{id_tb.Text}'";
+                DataOperation(query, dataBase.connectionString);
+            }
+
+            DataLoad();
         }
     }
 }

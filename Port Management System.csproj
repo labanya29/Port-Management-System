@@ -275,5 +275,83 @@
   <ItemGroup>
     <None Include="Resources\DefaultPicture.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_1529923664.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondfofficle_k4o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-ocean-wallpaper-whatspaper-6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-ocean-wallpaper-whatspaper-61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_237232216.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_2372322161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-ocean-wallpaper-whatspaper-62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoltan-tasi-HTpAIzZRHvw-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-ocean-wallpaper-whatspaper-63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captain-hat-concept-illustration_114360-104541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PirateShip_MB2020_R20420.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tkvp0-1587490165-162615-blog-hypatia-h_dd596f2b7a00212281603c98310d3ea7-h_e57e634cb1801b8ecc250f4c5999792f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_571618518_sNki0WKNWOGkbWxVqDQcioLLGijaEjtd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\container-ships-zeymarine-blog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-925440650-2048x2048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tkvp0-1587490165-162615-blog-hypatia-h_dd596f2b7a00212281603c98310d3ea7-h_e57e634cb1801b8ecc250f4c5999792f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondfofficle_k4o1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_551950018_uGwFPL8ArP8FwESt1E38BZjOlGCakjjK.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

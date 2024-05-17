@@ -42,7 +42,6 @@ namespace Port_Management_System
             this.add_btn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.delete_sub_panel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.delete_btn = new System.Windows.Forms.Button();
             this.admin_panel = new System.Windows.Forms.Panel();
             this.profile_pictureBox = new System.Windows.Forms.PictureBox();
@@ -69,7 +68,7 @@ namespace Port_Management_System
             this.delete_admin_button.Dock = System.Windows.Forms.DockStyle.Top;
             this.delete_admin_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.delete_admin_button.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_admin_button.Location = new System.Drawing.Point(0, 42);
+            this.delete_admin_button.Location = new System.Drawing.Point(0, 0);
             this.delete_admin_button.Margin = new System.Windows.Forms.Padding(0);
             this.delete_admin_button.Name = "delete_admin_button";
             this.delete_admin_button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -221,6 +220,7 @@ namespace Port_Management_System
             this.add_btn.BackColor = System.Drawing.Color.SteelBlue;
             this.add_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.add_btn.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_btn.Location = new System.Drawing.Point(0, 106);
             this.add_btn.Margin = new System.Windows.Forms.Padding(0);
             this.add_btn.Name = "add_btn";
@@ -253,7 +253,6 @@ namespace Port_Management_System
             // 
             this.delete_sub_panel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.delete_sub_panel.Controls.Add(this.delete_admin_button);
-            this.delete_sub_panel.Controls.Add(this.button4);
             this.delete_sub_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.delete_sub_panel.Location = new System.Drawing.Point(0, 442);
             this.delete_sub_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -261,23 +260,6 @@ namespace Port_Management_System
             this.delete_sub_panel.Size = new System.Drawing.Size(136, 210);
             this.delete_sub_panel.TabIndex = 7;
             this.delete_sub_panel.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(136, 42);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Captain";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // delete_btn
             // 
@@ -357,7 +339,6 @@ namespace Port_Management_System
         private System.Windows.Forms.Button deck_officer_btn;
         private System.Windows.Forms.Button add_vessel_btn;
         private System.Windows.Forms.Panel delete_sub_panel;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button delete_btn;
         private System.Windows.Forms.PictureBox profile_pictureBox;
     }

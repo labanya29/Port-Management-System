@@ -13,10 +13,12 @@ namespace Port_Management_System
     public partial class Deck_officer : Form
     {
         private string id;
+        
         public Deck_officer()
         {
             InitializeComponent();
         }
+        
         public Deck_officer(string id):this()
         {
             this.id = id;  
@@ -71,7 +73,7 @@ namespace Port_Management_System
         {
 
             panelContainer.Controls.Clear();
-            Schedule schedule = new Schedule();
+            Schedule schedule = new Schedule(this.id);
             schedule.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(schedule);
         }

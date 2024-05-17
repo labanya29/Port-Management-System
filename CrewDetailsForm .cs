@@ -40,7 +40,7 @@ namespace Port_Management_System
                                        [Email], 
                                        Password
                                 FROM 
-                                    [Admin Information] 
+                                    [Crew Information] 
                                 ORDER BY
                                       Added_DateTime DESC";
 
@@ -74,6 +74,54 @@ namespace Port_Management_System
             {
                 MessageBox.Show("Class name is Admin-info function name is LoadData and exception: " + ex.Message);
             }
+        }
+
+        private void data_grid_view_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void data_grid_view_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void DataOperation(string query, string connectionString)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show($"{id_tb.Text} account successfully registered", "VOVO");
+                    connection.Close();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Class name is Quiz and function name is DataOperation and exception: " + ex.Message);
+            }
+
+        }
+        private void CrewSearchBtn_Click(object sender, EventArgs e)
+        {
+            Database dataBase = new Database();
+            string query = $@"SELECT 
+                                    ID, 
+                                    Name,
+                                    [Phone Number], 
+                                    [Email], 
+                                    Password 
+                             FROM 
+                                [Crew Information] 
+                            WHERE 
+                                [ID] = '{id_tb.Text}'";
+            DataOperation(query, dataBase.connectionString);
         }
     }
 }

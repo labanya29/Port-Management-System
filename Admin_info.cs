@@ -137,6 +137,11 @@ namespace Port_Management_System
                                 [ID] = '{id_tb.Text}'";
             DataOperation(query, dataBase.connectionString);
         }
+
+        private void id_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

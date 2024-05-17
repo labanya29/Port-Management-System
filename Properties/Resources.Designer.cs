@@ -63,6 +63,46 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm1 {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_222402728_gpmZFXUGnpVsiPE0hQBuYqIMxLmGGNnm1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc1 {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_611035064_PXyAGstXHU2Etu8rdFrcuaWEsj9UmFbc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2ND {
             get {
                 object obj = ResourceManager.GetObject("2ND", resourceCulture);
@@ -73,9 +113,69 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA {
+            get {
+                object obj = ResourceManager.GetObject("360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA1 {
+            get {
+                object obj = ResourceManager.GetObject("360_F_108317062_Xkwb5KmLXWuvaufcHGV65oEpDunmmwcA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _360_F_551950018_uGwFPL8ArP8FwESt1E38BZjOlGCakjjK {
+            get {
+                object obj = ResourceManager.GetObject("360_F_551950018_uGwFPL8ArP8FwESt1E38BZjOlGCakjjK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _360_F_571618518_sNki0WKNWOGkbWxVqDQcioLLGijaEjtd {
+            get {
+                object obj = ResourceManager.GetObject("360_F_571618518_sNki0WKNWOGkbWxVqDQcioLLGijaEjtd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap captain_hat_concept_illustration_114360_10454 {
             get {
                 object obj = ResourceManager.GetObject("captain-hat-concept-illustration_114360-10454", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap captain_hat_concept_illustration_114360_104541 {
+            get {
+                object obj = ResourceManager.GetObject("captain-hat-concept-illustration_114360-104541", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap container_ships_zeymarine_blog {
+            get {
+                object obj = ResourceManager.GetObject("container-ships-zeymarine-blog", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +213,79 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondfofficle_k4o1 {
+            get {
+                object obj = ResourceManager.GetObject("fondfofficle_k4o1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gold_background_with_lines_squares_23_2148594717 {
             get {
                 object obj = ResourceManager.GetObject("gold-background-with-lines-squares_23-2148594717", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hd_ocean_wallpaper_whatspaper_6 {
+            get {
+                object obj = ResourceManager.GetObject("hd-ocean-wallpaper-whatspaper-6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hd_ocean_wallpaper_whatspaper_61 {
+            get {
+                object obj = ResourceManager.GetObject("hd-ocean-wallpaper-whatspaper-61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hd_ocean_wallpaper_whatspaper_62 {
+            get {
+                object obj = ResourceManager.GetObject("hd-ocean-wallpaper-whatspaper-62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hd_ocean_wallpaper_whatspaper_63 {
+            get {
+                object obj = ResourceManager.GetObject("hd-ocean-wallpaper-whatspaper-63", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +313,16 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_925440650_2048x2048 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-925440650-2048x2048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Log_in {
             get {
                 object obj = ResourceManager.GetObject("Log in", resourceCulture);
@@ -163,6 +343,16 @@ namespace Port_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PirateShip_MB2020_R20420 {
+            get {
+                object obj = ResourceManager.GetObject("PirateShip_MB2020_R20420", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ship_captain_logo_by_gangadhar666_dc5dvxq_pre {
             get {
                 object obj = ResourceManager.GetObject("ship_captain_logo_by_gangadhar666_dc5dvxq-pre", resourceCulture);
@@ -176,6 +366,58 @@ namespace Port_Management_System.Properties {
         internal static System.Drawing.Bitmap shutterstock_1529923664 {
             get {
                 object obj = ResourceManager.GetObject("shutterstock_1529923664", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_237232216 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_237232216", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_2372322161 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_2372322161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tkvp0_1587490165_162615_blog_hypatia_h_dd596f2b7a00212281603c98310d3ea7_h_e57e634cb1801b8ecc250f4c5999792f {
+            get {
+                object obj = ResourceManager.GetObject("Tkvp0-1587490165-162615-blog-hypatia-h_dd596f2b7a00212281603c98310d3ea7-h_e57e634" +
+                        "cb1801b8ecc250f4c5999792f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tkvp0_1587490165_162615_blog_hypatia_h_dd596f2b7a00212281603c98310d3ea7_h_e57e634cb1801b8ecc250f4c5999792f1 {
+            get {
+                object obj = ResourceManager.GetObject("Tkvp0-1587490165-162615-blog-hypatia-h_dd596f2b7a00212281603c98310d3ea7-h_e57e634" +
+                        "cb1801b8ecc250f4c5999792f1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoltan_tasi_HTpAIzZRHvw_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("zoltan-tasi-HTpAIzZRHvw-unsplash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

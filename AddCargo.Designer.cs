@@ -160,6 +160,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Port_Management_System.Properties.Resources.images1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.RegisterBtn);
             this.Controls.Add(this.DestinationTb);

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.id_tb = new System.Windows.Forms.TextBox();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.CrewSearchBtn = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -44,28 +44,29 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel1.Controls.Add(this.id_tb);
             this.panel1.Controls.Add(this.DeleteBtn);
             this.panel1.Controls.Add(this.CrewSearchBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(827, 103);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // id_tb
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 39);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 22);
-            this.textBox1.TabIndex = 2;
+            this.id_tb.Location = new System.Drawing.Point(89, 39);
+            this.id_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.id_tb.Name = "id_tb";
+            this.id_tb.Size = new System.Drawing.Size(363, 22);
+            this.id_tb.TabIndex = 2;
             // 
             // DeleteBtn
             // 
             this.DeleteBtn.Location = new System.Drawing.Point(641, 37);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(100, 28);
             this.DeleteBtn.TabIndex = 1;
@@ -75,12 +76,13 @@
             // CrewSearchBtn
             // 
             this.CrewSearchBtn.Location = new System.Drawing.Point(493, 37);
-            this.CrewSearchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CrewSearchBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CrewSearchBtn.Name = "CrewSearchBtn";
             this.CrewSearchBtn.Size = new System.Drawing.Size(100, 28);
             this.CrewSearchBtn.TabIndex = 0;
             this.CrewSearchBtn.Text = "Search";
             this.CrewSearchBtn.UseVisualStyleBackColor = true;
+            this.CrewSearchBtn.Click += new System.EventHandler(this.CrewSearchBtn_Click);
             // 
             // contextMenuStrip1
             // 
@@ -92,6 +94,7 @@
             // 
             this.data_grid_view.AllowUserToAddRows = false;
             this.data_grid_view.AllowUserToDeleteRows = false;
+            this.data_grid_view.BackgroundColor = System.Drawing.Color.LightCyan;
             this.data_grid_view.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_view.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.@ID,
@@ -105,6 +108,7 @@
             this.data_grid_view.RowTemplate.Height = 24;
             this.data_grid_view.Size = new System.Drawing.Size(827, 340);
             this.data_grid_view.TabIndex = 1;
+            this.data_grid_view.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_view_CellContentClick_1);
             // 
             // @ID
             // 
@@ -136,8 +140,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.data_grid_view);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            //this.Name = "CrewDetailsForm";
+            this.Margin = new System.Windows.Forms.Padding(4);
+          //  this.Name = "CrewDetailsForm";
             this.Size = new System.Drawing.Size(827, 443);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -149,7 +153,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox id_tb;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button CrewSearchBtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -157,5 +161,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+      //  private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        // private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        // private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }
 }

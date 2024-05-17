@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.id_tb = new System.Windows.Forms.TextBox();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.CrewSearchBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -39,7 +39,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel1.Controls.Add(this.id_tb);
             this.panel1.Controls.Add(this.DeleteBtn);
             this.panel1.Controls.Add(this.CrewSearchBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -49,13 +50,13 @@
             this.panel1.Size = new System.Drawing.Size(909, 103);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // id_tb
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 39);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 22);
-            this.textBox1.TabIndex = 2;
+            this.id_tb.Location = new System.Drawing.Point(89, 39);
+            this.id_tb.Margin = new System.Windows.Forms.Padding(4);
+            this.id_tb.Name = "id_tb";
+            this.id_tb.Size = new System.Drawing.Size(363, 22);
+            this.id_tb.TabIndex = 2;
             // 
             // DeleteBtn
             // 
@@ -66,6 +67,7 @@
             this.DeleteBtn.TabIndex = 1;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // CrewSearchBtn
             // 
@@ -79,6 +81,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.PowderBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 103);
@@ -107,7 +110,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox id_tb;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button CrewSearchBtn;
         private System.Windows.Forms.DataGridView dataGridView1;

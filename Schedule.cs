@@ -58,5 +58,10 @@ namespace Port_Management_System
                 MessageBox.Show("Error");
             }
         }
+
+        private void panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

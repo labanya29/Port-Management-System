@@ -74,10 +74,12 @@
             this.id_tb.Name = "id_tb";
             this.id_tb.Size = new System.Drawing.Size(310, 22);
             this.id_tb.TabIndex = 2;
+            this.id_tb.TextChanged += new System.EventHandler(this.id_tb_TextChanged);
             // 
             // delete_button
             // 
             this.delete_button.BackColor = System.Drawing.Color.SkyBlue;
+            this.delete_button.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_button.Location = new System.Drawing.Point(743, 32);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(78, 33);
@@ -89,6 +91,7 @@
             // search_btn
             // 
             this.search_btn.BackColor = System.Drawing.Color.SkyBlue;
+            this.search_btn.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_btn.Location = new System.Drawing.Point(615, 30);
             this.search_btn.Name = "search_btn";
             this.search_btn.Size = new System.Drawing.Size(101, 37);

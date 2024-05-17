@@ -28,17 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.AddCrewPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DKLogOutBtn = new System.Windows.Forms.Button();
             this.CrewDetailsBtn = new System.Windows.Forms.Button();
             this.AddCrew = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.AddCrewPanel = new System.Windows.Forms.Panel();
-            this.DKLogOutBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // AddCrewPanel
+            // 
+            this.AddCrewPanel.BackgroundImage = global::Port_Management_System.Properties.Resources._360_F_571618518_sNki0WKNWOGkbWxVqDQcioLLGijaEjtd;
+            this.AddCrewPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AddCrewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddCrewPanel.Location = new System.Drawing.Point(194, 0);
+            this.AddCrewPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.AddCrewPanel.Name = "AddCrewPanel";
+            this.AddCrewPanel.Size = new System.Drawing.Size(873, 554);
+            this.AddCrewPanel.TabIndex = 1;
+            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.DKLogOutBtn);
             this.panel1.Controls.Add(this.CrewDetailsBtn);
             this.panel1.Controls.Add(this.AddCrew);
@@ -50,66 +63,66 @@
             this.panel1.Size = new System.Drawing.Size(194, 554);
             this.panel1.TabIndex = 0;
             // 
+            // DKLogOutBtn
+            // 
+            this.DKLogOutBtn.BackColor = System.Drawing.Color.Cornsilk;
+            this.DKLogOutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DKLogOutBtn.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DKLogOutBtn.Location = new System.Drawing.Point(0, 531);
+            this.DKLogOutBtn.Name = "DKLogOutBtn";
+            this.DKLogOutBtn.Size = new System.Drawing.Size(194, 23);
+            this.DKLogOutBtn.TabIndex = 3;
+            this.DKLogOutBtn.Text = "Log Out";
+            this.DKLogOutBtn.UseVisualStyleBackColor = false;
+            this.DKLogOutBtn.Click += new System.EventHandler(this.DKLogOutBtn_Click);
+            // 
             // CrewDetailsBtn
             // 
+            this.CrewDetailsBtn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.CrewDetailsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CrewDetailsBtn.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CrewDetailsBtn.Location = new System.Drawing.Point(0, 56);
             this.CrewDetailsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CrewDetailsBtn.Name = "CrewDetailsBtn";
             this.CrewDetailsBtn.Size = new System.Drawing.Size(194, 28);
             this.CrewDetailsBtn.TabIndex = 2;
             this.CrewDetailsBtn.Text = "Crew Details";
-            this.CrewDetailsBtn.UseVisualStyleBackColor = true;
+            this.CrewDetailsBtn.UseVisualStyleBackColor = false;
             this.CrewDetailsBtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // AddCrew
             // 
+            this.AddCrew.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AddCrew.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddCrew.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddCrew.Location = new System.Drawing.Point(0, 28);
             this.AddCrew.Margin = new System.Windows.Forms.Padding(4);
             this.AddCrew.Name = "AddCrew";
             this.AddCrew.Size = new System.Drawing.Size(194, 28);
             this.AddCrew.TabIndex = 1;
             this.AddCrew.Text = "Add Crew";
-            this.AddCrew.UseVisualStyleBackColor = true;
+            this.AddCrew.UseVisualStyleBackColor = false;
             this.AddCrew.Click += new System.EventHandler(this.add_crew_btn_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Vessel Details ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // AddCrewPanel
-            // 
-            this.AddCrewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddCrewPanel.Location = new System.Drawing.Point(194, 0);
-            this.AddCrewPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.AddCrewPanel.Name = "AddCrewPanel";
-            this.AddCrewPanel.Size = new System.Drawing.Size(873, 554);
-            this.AddCrewPanel.TabIndex = 1;
-            // 
-            // DKLogOutBtn
-            // 
-            this.DKLogOutBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DKLogOutBtn.Location = new System.Drawing.Point(0, 531);
-            this.DKLogOutBtn.Name = "DKLogOutBtn";
-            this.DKLogOutBtn.Size = new System.Drawing.Size(194, 23);
-            this.DKLogOutBtn.TabIndex = 3;
-            this.DKLogOutBtn.Text = "Log Out";
-            this.DKLogOutBtn.UseVisualStyleBackColor = true;
-            this.DKLogOutBtn.Click += new System.EventHandler(this.DKLogOutBtn_Click);
             // 
             // Deck_officer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.AddCrewPanel);
             this.Controls.Add(this.panel1);

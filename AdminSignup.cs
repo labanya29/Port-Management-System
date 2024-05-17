@@ -21,6 +21,16 @@ namespace Port_Management_System
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void back_btn_Click(object sender, EventArgs e)
         {
             this.Hide();

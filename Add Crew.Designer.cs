@@ -56,8 +56,9 @@
             this.panel1.Controls.Add(this.MaleRB);
             this.panel1.Controls.Add(this.OthersRB);
             this.panel1.Controls.Add(this.FemaleRB);
+            this.panel1.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(115, 336);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(269, 47);
             this.panel1.TabIndex = 34;
@@ -66,9 +67,9 @@
             // 
             this.MaleRB.AutoSize = true;
             this.MaleRB.Location = new System.Drawing.Point(21, 10);
-            this.MaleRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaleRB.Margin = new System.Windows.Forms.Padding(4);
             this.MaleRB.Name = "MaleRB";
-            this.MaleRB.Size = new System.Drawing.Size(58, 20);
+            this.MaleRB.Size = new System.Drawing.Size(62, 19);
             this.MaleRB.TabIndex = 15;
             this.MaleRB.TabStop = true;
             this.MaleRB.Text = "Male";
@@ -78,9 +79,9 @@
             // 
             this.OthersRB.AutoSize = true;
             this.OthersRB.Location = new System.Drawing.Point(180, 10);
-            this.OthersRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OthersRB.Margin = new System.Windows.Forms.Padding(4);
             this.OthersRB.Name = "OthersRB";
-            this.OthersRB.Size = new System.Drawing.Size(67, 20);
+            this.OthersRB.Size = new System.Drawing.Size(72, 19);
             this.OthersRB.TabIndex = 17;
             this.OthersRB.TabStop = true;
             this.OthersRB.Text = "Others";
@@ -90,9 +91,9 @@
             // 
             this.FemaleRB.AutoSize = true;
             this.FemaleRB.Location = new System.Drawing.Point(93, 10);
-            this.FemaleRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FemaleRB.Margin = new System.Windows.Forms.Padding(4);
             this.FemaleRB.Name = "FemaleRB";
-            this.FemaleRB.Size = new System.Drawing.Size(74, 20);
+            this.FemaleRB.Size = new System.Drawing.Size(76, 19);
             this.FemaleRB.TabIndex = 16;
             this.FemaleRB.TabStop = true;
             this.FemaleRB.Text = "Female";
@@ -102,7 +103,7 @@
             // 
             this.picture_box.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picture_box.Location = new System.Drawing.Point(417, 71);
-            this.picture_box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picture_box.Margin = new System.Windows.Forms.Padding(4);
             this.picture_box.Name = "picture_box";
             this.picture_box.Size = new System.Drawing.Size(201, 180);
             this.picture_box.TabIndex = 32;
@@ -112,18 +113,20 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(111, 316);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 35;
             this.label6.Text = "Gender";
             // 
             // register_btn
             // 
             this.register_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.register_btn.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_btn.Location = new System.Drawing.Point(312, 430);
-            this.register_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_btn.Margin = new System.Windows.Forms.Padding(4);
             this.register_btn.Name = "register_btn";
             this.register_btn.Size = new System.Drawing.Size(100, 28);
             this.register_btn.TabIndex = 33;
@@ -135,7 +138,7 @@
             // 
             this.address_tb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.address_tb.Location = new System.Drawing.Point(115, 273);
-            this.address_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.address_tb.Margin = new System.Windows.Forms.Padding(4);
             this.address_tb.Name = "address_tb";
             this.address_tb.Size = new System.Drawing.Size(132, 22);
             this.address_tb.TabIndex = 31;
@@ -144,10 +147,11 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(111, 254);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 30;
             this.label4.Text = "Address";
             // 
@@ -155,7 +159,7 @@
             // 
             this.email_tb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.email_tb.Location = new System.Drawing.Point(115, 214);
-            this.email_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.email_tb.Margin = new System.Windows.Forms.Padding(4);
             this.email_tb.Name = "email_tb";
             this.email_tb.Size = new System.Drawing.Size(132, 22);
             this.email_tb.TabIndex = 29;
@@ -164,10 +168,11 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(111, 194);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 16);
+            this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 28;
             this.label5.Text = "Email";
             // 
@@ -175,7 +180,7 @@
             // 
             this.phone_number_tb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.phone_number_tb.Location = new System.Drawing.Point(115, 161);
-            this.phone_number_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phone_number_tb.Margin = new System.Windows.Forms.Padding(4);
             this.phone_number_tb.Name = "phone_number_tb";
             this.phone_number_tb.Size = new System.Drawing.Size(132, 22);
             this.phone_number_tb.TabIndex = 27;
@@ -184,10 +189,11 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(111, 142);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
+            this.label3.Size = new System.Drawing.Size(101, 15);
             this.label3.TabIndex = 26;
             this.label3.Text = "Phone Number";
             // 
@@ -195,7 +201,7 @@
             // 
             this.name_tb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.name_tb.Location = new System.Drawing.Point(115, 103);
-            this.name_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name_tb.Margin = new System.Windows.Forms.Padding(4);
             this.name_tb.Name = "name_tb";
             this.name_tb.Size = new System.Drawing.Size(132, 22);
             this.name_tb.TabIndex = 25;
@@ -204,18 +210,20 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(111, 84);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(45, 15);
             this.label2.TabIndex = 24;
             this.label2.Text = "Name";
             // 
             // choose_pic_btn
             // 
             this.choose_pic_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.choose_pic_btn.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.choose_pic_btn.Location = new System.Drawing.Point(443, 273);
-            this.choose_pic_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.choose_pic_btn.Margin = new System.Windows.Forms.Padding(4);
             this.choose_pic_btn.Name = "choose_pic_btn";
             this.choose_pic_btn.Size = new System.Drawing.Size(141, 28);
             this.choose_pic_btn.TabIndex = 22;
@@ -228,7 +236,7 @@
             this.id_tb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_tb.Enabled = false;
             this.id_tb.Location = new System.Drawing.Point(115, 37);
-            this.id_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id_tb.Margin = new System.Windows.Forms.Padding(4);
             this.id_tb.Name = "id_tb";
             this.id_tb.ReadOnly = true;
             this.id_tb.Size = new System.Drawing.Size(132, 22);
@@ -238,10 +246,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(111, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.Size = new System.Drawing.Size(22, 15);
             this.label1.TabIndex = 20;
             this.label1.Text = "ID";
             // 
@@ -249,6 +258,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Port_Management_System.Properties.Resources.fondfofficle_k4o1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picture_box);
             this.Controls.Add(this.label6);
@@ -264,7 +275,7 @@
             this.Controls.Add(this.choose_pic_btn);
             this.Controls.Add(this.id_tb);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add";
             this.Size = new System.Drawing.Size(728, 546);
             this.Load += new System.EventHandler(this.AddCrew_Load);
